@@ -68,7 +68,6 @@ public class MyArray {
 		int[] newArray = new int[count1()];
 		int n = 0;
 		for (int i = 0; i < array.length - 1; i++) {
-
 			if (array[i] + 1 != array[i + 1]) {
 				for (int j = 1; j < array[i + 1] - array[i]; j++) {
 					newArray[n] = array[i] + j;
