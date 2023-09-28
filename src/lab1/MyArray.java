@@ -54,9 +54,35 @@ public class MyArray {
 		return newArray;
 	}
 
+	public int count1() {
+		int n = 0;
+		for (int i = 0; i < array.length - 1; i++) {
+			if (array[i] + 1 != array[i + 1]) {
+				n = n + (array[i + 1]) - (array[i]) - 1;
+			}
+		}
+		return n;
+	}
+
+	public int[] getMissingValues() {
+		int[] newArray = new int[count1()];
+		int n = 0;
+		for (int i = 0; i < array.length - 1; i++) {
+
+			if (array[i] + 1 != array[i + 1]) {
+				for (int j = 1; j < array[i + 1] - array[i]; j++) {
+					newArray[n] = array[i] + j;
+					n++;
+				}
+			}
+		}
+		return newArray;
+	}
+
 	public static void main(String[] args) {
-		int[] arr = { 1, 2, 3, 3, 4, 5, 4, 3, 2, 7 };
+		int[] arr = { 1, 2, 3, 5, 7 };
 		MyArray newArr = new MyArray(arr);
-		System.out.println(Arrays.toString(newArr.removeDuplicates()));
+		System.out.println(Arrays.toString(newArr.getMissingValues()));
+		System.out.println(newArr.count1());
 	}
 }
