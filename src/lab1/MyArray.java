@@ -77,11 +77,10 @@ public class MyArray {
 		}
 		return newArray;
 	}
-
 	public static void main(String[] args) {
 		int[] arr = { 1, 2, 3, 5, 7 };
 		MyArray newArr = new MyArray(arr);
 		System.out.println(Arrays.toString(newArr.getMissingValues()));
-		System.out.println(newArr.count1());
+		System.out.println(newArr.count());
 	}
 }
