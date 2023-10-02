@@ -56,6 +56,7 @@ public class Task1_1 {
 		}
 
 	}
+	
 	public static void main(String[] args) {
 		int n = 3;
 		System.out.println(getSn1(n));
