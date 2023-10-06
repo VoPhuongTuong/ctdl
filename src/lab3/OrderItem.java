@@ -15,6 +15,6 @@ public int getQuality() {
 	return quality;
 }
 public double getSubtotal() {
-	return p.getPrice()+quality;
+	return p.getPrice()*quality;
 }
 }
