@@ -113,7 +113,6 @@ public class Lab4 {
 				array[j] = temp;
 			}
 		}
-
 		int temp = array[i + 1];
 		array[i + 1] = array[high];
 		array[high] = temp;
@@ -131,8 +130,6 @@ public class Lab4 {
 		inMang(array);
 		mergeSort(array);
 		inMang(array);
-	
-		System.out.println(	getPivot_MedianOfThree(array, 3 , 6));
 		
 	}
 }
