@@ -178,7 +178,6 @@ public class MyArrayList<E> {
 		System.out.println("indexOf:" + list.indexOf(8));
 		System.out.println("contain:" + list.contains(8));
 		System.out.println("removes:" + list.removes(8));
-System.out.println();
 	}
 
 }
