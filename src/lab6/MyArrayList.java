@@ -74,7 +74,7 @@ public class MyArrayList<E> {
 		elements[i] = e;
 		size++;
 
-	}
+	} 
 
 	public E remove(int i) throws IndexOutOfBoundsException {
 		if (i < 0 || i >= size) {
