@@ -266,5 +266,4 @@ public class BST<E extends Comparable<E>> {
 			System.out.print(node.getData() + " ");
 		}
 	}
-
 }
